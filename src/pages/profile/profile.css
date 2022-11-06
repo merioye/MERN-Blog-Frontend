@@ -1,0 +1,207 @@
+.profile-page{
+    width: 1150px;
+    height: 800px;
+    border: 1px solid rgb(194, 191, 191);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -15px black;
+}
+
+.profile-info{
+    width: 100%;
+    height: 700px;
+    /* border: 3px solid purple; */
+    padding: 30px;
+}
+
+.del-ac-btn-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.del-ac-btn{
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.update-form{
+    width: 100%;
+    height: 580px;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+.profile-photo-container{
+    height: 140px;
+    width: 170px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.profile-photo-container p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.profile-photo{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile-photo img{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+.profile-image-update{
+    height: 40px;
+    width: 40px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.profile-image-update-btn{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.update-image{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 40px;
+    padding: 10px 0px;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+.update-input-container{
+    width: 100%;
+    height: 85px;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.update-input-container label{
+    font-size: 1.5rem;
+}
+
+.update-input-container input{
+    width: 100%;
+    height: 45px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(194, 191, 191);
+    color: rgb(87, 87, 87);
+}
+.update-input-container input:hover{
+    border-bottom: 1px solid black;
+}
+.update-input-container input:focus{
+    border-bottom: 2px solid rgb(3, 13, 158);
+}
+
+.update-input-container input+span{
+    padding-top: 5px;
+    color: red;
+    display: none;
+}
+
+.update-input-container input:invalid[focused='true']{
+    border-bottom: 2px solid red;
+}
+.update-input-container input:invalid[focused='true'] + span{
+    display: inline-block;
+}
+
+
+
+
+
+
+.update-btn{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.update-btn button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ################ Responsive style ################# */
+
+@media only screen and (max-width:1300px){
+    .profile-page{
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width:930px){
+    .profile-page{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .profile-page{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .profile-page{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .profile-info{
+        padding: 10px;
+    }
+    .update-form{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .profile-page{
+        border: none;
+        box-shadow: none;
+    }
+}

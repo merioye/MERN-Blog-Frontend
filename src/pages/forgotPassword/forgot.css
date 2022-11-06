@@ -1,0 +1,115 @@
+
+
+.forgot-form{
+    width: 700px;
+    height: 180px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 10px;
+}
+.forgot-form form input{
+    width: 100%;
+    height: 55px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid rgb(194, 191, 191);
+}
+.forgot-form form input:hover{
+    border: 1px solid black;
+}
+.forgot-form form input:focus{
+    border: 2px solid rgb(3, 13, 158);
+}
+
+
+
+.forgot-form form input+span{
+    font-size: 0.85rem;
+    padding-left: 15px;
+    color: rgb(128, 127, 127);
+
+}
+
+
+.login-and-forgot{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid blue; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot-btn-left, .forgot-btn-right{
+    height: 100%;
+    width: 130px;
+    /* border: 1px solid green; */
+}
+
+.forgot-btn-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.forgot-btn-left > span{
+    color: rgb(128, 127, 127);
+}
+
+.forgot-wala-login{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.forgot-wala-login span{
+    padding: 8px 10px;
+}
+.forgot-wala-login:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+.forgot-btn-right button{
+    height: 100%;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
+    color: white;
+}
+
+
+
+
+
+
+
+/* ############## Responsive style ############# */
+
+@media only screen and (max-width:920px){
+    .forgot-form{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:670px){
+    .forgot-form{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:476px){
+    .forgot-form{
+        height: 200px;
+    }
+}

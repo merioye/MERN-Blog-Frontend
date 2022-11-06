@@ -1,0 +1,161 @@
+.header-image{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    position: relative;
+}
+.header-image img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -100;
+}
+.header-image h1{
+    position: absolute;
+    top: -50px;
+    left: 41.5%;
+    font-size: 8rem;
+    font-weight: 400;
+    color: rgb(77, 76, 76);
+}
+
+.categories-container{
+    width: 210px;
+    height: 40px;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(88, 88, 88);
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+    position: relative;
+}
+.categories-container:hover{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+
+.categories-container ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    list-style-type: none;
+    text-transform: capitalize;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    padding: 10px 0px;
+    height: 200px;
+    overflow: auto;
+    box-shadow: 0px 3px 20px -8px rgba(52, 116, 253, 0.4);
+    animation-name: animate-list;
+    animation-duration: 0.5s;
+}
+.categories-container ul li{
+    padding: 7px 17px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.categories-container ul li:hover{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+
+
+@keyframes animate-list{
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+}
+
+
+
+
+
+
+
+
+.articles{
+    height: auto;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.articles::after{
+    content: '';
+    width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ############ Responsive Style ############### */
+
+@media only screen and (max-width:1180px){
+    .header-image{
+        height: 500px;
+    }
+    .header-image h1{
+        left: 37%;
+    }
+}
+
+
+@media only screen and (max-width:1020px){
+    .articles{
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+
+
+@media only screen and (max-width:743px){
+    .header-image{
+        height: 300px;
+        margin-top: 30px;
+    }
+    .header-image h1{
+        left: 38%;
+        font-size: 4rem;
+        top: -30px;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    .header-image{
+        height: 200px;
+    }
+    .header-image h1{
+        left: 36%;
+        font-size: 3rem;
+        top: -20px;
+    }
+    .articles{
+        width: 100%;
+    }
+}

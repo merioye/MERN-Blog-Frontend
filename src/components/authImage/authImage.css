@@ -1,0 +1,41 @@
+.auth-image{
+    /* width: 40%; */
+    width: 420px;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+
+.auth-image img{
+    width: 80%;
+    height: 250px;
+    margin-top: 100px;
+}
+
+
+
+
+/* ############## Responsive style ########### */
+
+@media only screen and (max-width:900px){
+    .auth-image{
+        width: 300px;
+    }
+    .auth-image img{
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .auth-image{
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 50px;
+    }
+    .auth-image img{
+        height: 100%;
+    }
+}

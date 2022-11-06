@@ -1,0 +1,77 @@
+
+
+.reset-form{
+    width: 700px;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+}
+.reset-form form input{
+    width: 100%;
+    height: 55px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid rgb(194, 191, 191);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.reset-form form input:hover{
+    border: 1px solid black;
+}
+.reset-form form input:focus{
+    border: 2px solid rgb(3, 13, 158);
+}
+
+.reset-form form input+span{
+    color: red;
+    display: none;
+}
+
+.reset-form form input:invalid[focused='true']{
+    border: 2px solid red;
+}
+.reset-form form input:invalid[focused='true'] + span{
+    display: inline-block;
+}
+
+
+
+.reset-form form button{
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
+    color: white;
+    margin-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+/* ############# Responsive style ############## */
+
+@media only screen and (max-width:920px){
+    .reset-form{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:670px){
+    .reset-form{
+        width: 90%;
+    }
+}
+
+

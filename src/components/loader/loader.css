@@ -1,0 +1,12 @@
+.loader{
+    height: 30px;
+    width: 30px;
+    /* margin: 40px auto; */
+    border-radius: 50%;
+    background: linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
+    position: absolute;
+    left: 48%;
+    top: 30%;
+    z-index: 200;
+    opacity: 0.8;
+}

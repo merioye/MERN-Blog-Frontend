@@ -1,0 +1,36 @@
+.auth-header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(152deg, rgb(0, 78, 254) 0%, rgb(0, 172, 254) 60%, rgb(104, 206, 255) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    color: white;
+    letter-spacing: 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* ############## Responsive style ########## */
+
+@media only screen and (max-width:460px){
+    .auth-header{
+        height: 80px;
+    }
+    .auth-heading{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* ########### Responsive style ############### */
+
+@media only screen and (max-width:900px){
+    .auth-header{
+        height: 70px;
+    }
+}

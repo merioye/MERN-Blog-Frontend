@@ -1,0 +1,238 @@
+.signup-page{
+    width: 1150px;
+    height: 800px;
+    border: 1px solid rgb(194, 191, 191);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -15px black;
+}
+
+.signup-form-and-image{
+    width: 100%;
+    height: 700px;
+    /* border: 3px solid purple; */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-form{
+    height: 100%;
+    width: 600px;
+    /* border: 1px solid green; */
+}
+
+
+.input-container{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.signup-inputBox{
+    width: 100%;
+    height: 55px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.signup-inputBox:hover{
+    border: 1px solid black;
+}
+.signup-inputBox:focus{
+    border: 2px solid rgb(3, 13, 158);
+}
+
+::placeholder{
+    font-size: 1.1rem;
+}
+
+.signup-inputBox +span{
+    color: red;
+    margin-top: 5px;
+    display: none;
+}
+
+.signup-inputBox:invalid[focused='true']{
+    border: 2px solid red;
+}
+
+.signup-inputBox:invalid[focused='true'] ~ span{
+    display: inline-block;
+}
+
+
+
+
+
+.file-input{
+    line-height: 55px;
+    padding: 5px;
+    font-size: 1.1rem;
+    /* border: 1px solid green; */
+} 
+
+.file-input ~ span{
+    color: red;
+    margin-top: -10px;
+    display: none;
+}
+
+.file-input:invalid ~ span{
+    display: inline-block;
+}
+
+
+.upload-file-btn{
+    padding: 10px 15px;
+    /* border: 1px solid red; */
+    background: linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top:10px;
+}
+
+.image-preview{
+    height: 55px;
+    width: 55px;
+    /* border: 1px solid green; */
+    border-radius: 50%;
+    position: absolute;
+    left: 170px;
+}
+
+
+
+
+.register-and-existing-btns{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.existing{
+    height: 100%;
+    width: 130px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.existing span{
+    font-size: 0.93rem;
+    color: rgb(82, 82, 82);
+}
+
+.existing-user-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.existing-user-btn:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.existing-user-btn span{
+    color: blue;
+    font-size: 1rem;
+}
+
+
+
+.register-btn{
+    height:100%;
+    width: 130px;
+    /* border: 1px solid green; */
+}
+
+.register-btn button{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(152deg, #004efe 0%, #00acfe 60%, #68ceff 100%);
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* ################ Responsive code ############ */
+
+@media only screen and (max-width:1300px){
+    .signup-page{
+        width: 800px;
+    }
+    .signup-form{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .signup-page{
+        width: 90%;
+    }
+    .signup-form-and-image{
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .signup-page{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .signup-form-and-image{
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .signup-form{
+        width: 100%;
+        /* height: 700px; */
+    }
+    .signup-inputBox{
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .signup-page{
+        box-shadow: none;
+        border: none;
+    }
+}

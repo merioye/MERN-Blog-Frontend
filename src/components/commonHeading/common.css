@@ -1,0 +1,68 @@
+.common-heading{
+    width: 1000px;
+    height: 250px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.common-heading h1{
+    font-size: 5.5rem;
+    font-weight: 300;
+    color: rgb(128, 127, 127);
+}
+.common-image{
+    height: 100%;
+    width: 250px;
+    /* border: 1px solid blue; */
+}
+.common-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* ############ Responsive style ############ */
+
+@media only screen and (max-width:1180px){
+    .common-heading{
+        width: 600px;
+        height: 180px;
+    }
+    .common-heading h1{
+        font-size: 3rem;
+    }
+}
+
+
+@media only screen and (max-width:743px){
+    .common-heading{
+        width: 330px;
+        height: 100px;
+    }
+    .common-heading h1{
+        font-size: 2rem;
+    }
+    .common-image{
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .common-heading{
+        width: 280px;
+        height: 100px;
+    }
+    .common-heading h1{
+        font-size: 1.5rem;
+    }
+    .common-image{
+        width: 110px;
+    }
+}
