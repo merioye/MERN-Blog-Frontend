@@ -424,7 +424,7 @@ const SinglePost = () => {
                                             return (
                                                 <Article
                                                     post={post}
-                                                    PF="http://localhost:8000/"
+                                                    PF={`${process.env.REACT_APP_API_BASE_URL}/`}
                                                     key={post._id}
                                                 />
                                             );
