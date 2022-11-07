@@ -56,8 +56,9 @@ const Signin = () => {
                 `${process.env.REACT_APP_API_BASE_URL}/signin`,
                 {
                     method: "POST",
-                    credentials: "same-origin",
+                    credentials: "include",
                     headers: {
+                        "Access-Control-Allow-Origin": true,
                         Accept: "application/json",
                         "Content-Type": "application/json",
                     },
